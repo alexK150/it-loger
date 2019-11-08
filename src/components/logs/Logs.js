@@ -1,13 +1,14 @@
 import React, {useState, useEffect} from 'react';
+import LogItem from "./LogItem";
 
-const LogItem = (props) => {
+const Logs = () => {
     const [logs, setLogs] = useState([]);
     const [loading, setLoading] = useState(false);
 
-    useEffect(() => {
-        getLogs();
-        //eslint-disable-next-line
-    }, []);
+     useEffect(() => {
+         getLogs();
+         //eslint-disable-next-line
+     }, []);
 
     const getLogs = async () => {
         setLoading(true);
@@ -16,6 +17,7 @@ const LogItem = (props) => {
 
         setLogs(data);
         setLoading(false);
+        return data
     }
 
     if (loading) {
@@ -23,15 +25,16 @@ const LogItem = (props) => {
     }
 
     return (
-        <ul className='collection-with-header'>
+        <ul className='collection with-header'>
             <li className='collection-header'>
                 <h4 className='center'>System Logs</h4>
             </li>
-            {!loading && logs.length === 0 ? (<p className='center'>No logs to show...</p>)
-                : (logs.map(log => <li>{log.message}</li>)
+            {!loading && logs.length === 0 ?
+                (<p className='center'>No logs to show...</p>)
+                : (logs.map(log => <LogItem key={log.id} log={log}/>)
                 )}
         </ul>
     )
 }
 
-export default LogItem;
+export default Logs;
