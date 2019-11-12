@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35c337c8-0167-45ed-a3c1-6d10a6fab0a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/logs/EditLogModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/techs/AddTechModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/techs/TechItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/techs/TechListModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/AddBtn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/AddBtn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/logs/AddLogModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logs/AddLogModal.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +62,10 @@
       <workItem from="1571591210496" duration="10240000" />
       <workItem from="1572333477079" duration="28000" />
       <workItem from="1572949814808" duration="5224000" />
-      <workItem from="1573212903569" duration="6381000" />
+      <workItem from="1573212903569" duration="7315000" />
+      <workItem from="1573323400633" duration="1582000" />
+      <workItem from="1573499021839" duration="17000" />
+      <workItem from="1573543728486" duration="3535000" />
     </task>
     <task id="LOCAL-00001" summary="init v0">
       <created>1571593548012</created>
@@ -100,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573223015284</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="init v6 Materialize toast added to AddLogModal">
+      <created>1573223535154</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1573223535154</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +142,7 @@
     <MESSAGE value="init v3 BugFix with Logs &amp; LogItem Components" />
     <MESSAGE value="init v4 + Preloader Component (by Materialize) improved LogItem Components" />
     <MESSAGE value="init v5 + AddLogModal (adding Log functionality) + AddBtn" />
-    <option name="LAST_COMMIT_MESSAGE" value="init v5 + AddLogModal (adding Log functionality) + AddBtn" />
+    <MESSAGE value="init v6 Materialize toast added to AddLogModal" />
+    <option name="LAST_COMMIT_MESSAGE" value="init v6 Materialize toast added to AddLogModal" />
   </component>
 </project>
