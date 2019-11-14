@@ -4,6 +4,7 @@ import {
     LOGS_ERROR
 } from './types';
 
+// Get logs form server
 export const getLogs = () => async dispatch => {
     try {
         setLoading();
@@ -23,7 +24,7 @@ export const getLogs = () => async dispatch => {
     }
 };
 
-//Set Loading to true
+//Set loading to true
 export const setLoading = () => {
     return {
         type: SET_LOADING
