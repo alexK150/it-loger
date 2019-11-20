@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="35c337c8-0167-45ed-a3c1-6d10a6fab0a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/logActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/logActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logs/EditLogModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logs/EditLogModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logs/LogItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logs/LogItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SearchBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/log-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/log-reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,7 +67,8 @@
       <workItem from="1573733553659" duration="5790000" />
       <workItem from="1573805057901" duration="4305000" />
       <workItem from="1573824439791" duration="6163000" />
-      <workItem from="1573841150339" duration="1048000" />
+      <workItem from="1573841150339" duration="1750000" />
+      <workItem from="1574249676116" duration="790000" />
     </task>
     <task id="LOCAL-00001" summary="init v0">
       <created>1571593548012</created>
@@ -162,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573808762465</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="init v13 updateLog functionality">
+      <created>1573842244964</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1573842244964</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +201,7 @@
     <MESSAGE value="init v10 connect Logs Component to Redux for stateflow" />
     <MESSAGE value="init v11 addLogs functionality" />
     <MESSAGE value="init v12 deleteLog functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="init v12 deleteLog functionality" />
+    <MESSAGE value="init v13 updateLog functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="init v13 updateLog functionality" />
   </component>
 </project>
