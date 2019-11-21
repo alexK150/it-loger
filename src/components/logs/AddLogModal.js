@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import {connect} from 'react-redux';
-import {addLog} from "../../actions/logActions";
+import {addLog} from '../../actions/logActions';
 import M from 'materialize-css/dist/js/materialize.min';
+import TechSelectOptions from '../techs/TechSelectOptions';
 
 const AddLogModal = ({addLog}) => {
     const [message, setMessage] = useState('');
@@ -10,15 +11,15 @@ const AddLogModal = ({addLog}) => {
 
     const onMessageSendHandler = (e) => {
         setMessage(e.target.value)
-    }
+    };
 
     const onSelectHandler = (e) => {
         setTech(e.target.value)
-    }
+    };
 
     const onAttentionHandler = (e) => {
         setAttention(!attention)
-    }
+    };
 
     const onSubmit =()=>{
         if (message === '' || tech === ''){
@@ -29,7 +30,7 @@ const AddLogModal = ({addLog}) => {
                 attention,
                 tech,
                 date: new Date()
-            }
+            };
 
             addLog(newLog);
 
@@ -40,7 +41,7 @@ const AddLogModal = ({addLog}) => {
             setTech('');
             setAttention(false)
         }
-    }
+    };
 
     return (
         <div id='add-log-modal' className='modal' style={modalStyle}>
@@ -68,9 +69,7 @@ const AddLogModal = ({addLog}) => {
                             <option value="" disabled>
                                 Select Technician
                             </option>
-                            <option value="Will Smith">Will Smith</option>
-                            <option value="Sam Larson">Sam Larson</option>
-                            <option value="Barak Obama">Barak Obama</option>
+                            <TechSelectOptions/>
                         </select>
                     </div>
                 </div>
@@ -100,11 +99,11 @@ const AddLogModal = ({addLog}) => {
             </div>
         </div>
     )
-}
+};
 
 const modalStyle = {
     width: '75%',
     height: '75%'
-}
+};
 
 export default connect(null, {addLog}) (AddLogModal);

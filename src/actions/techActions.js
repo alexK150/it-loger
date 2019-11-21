@@ -4,7 +4,7 @@ import {
     DELETE_TECH,
     SET_LOADING,
     TECHS_ERROR, GET_LOGS, LOGS_ERROR
-} from "./types";
+} from './types';
 
 //Get techs from server
 export const getTechs = () => async dispatch => {

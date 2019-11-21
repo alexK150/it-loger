@@ -1,4 +1,4 @@
-import {combineReducers} from "redux";
+import {combineReducers} from 'redux';
 import logReducer from './log-reducer';
 import techReducer from './tech-reducer';
 
