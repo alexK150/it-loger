@@ -1,29 +1,36 @@
 import React, {useState} from 'react';
+import {connect} from 'react-redux';
+import {addTech} from '../../actions/techActions';
 import M from 'materialize-css/dist/js/materialize.min';
 
-const AddTechModal = (props) => {
+const AddTechModal = ({addTech}) => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
 
     const onFirstNameChange = (e) => {
         setFirstName(e.target.value)
-    }
+    };
 
     const onLastNameChange = (e) => {
         setLastName(e.target.value)
-    }
+    };
 
     const onSubmit =()=>{
         if (firstName === '' || lastName === ''){
             M.toast({html: 'Please enter the first and last name'})
         } else {
-            console.log(firstName, lastName);
+            addTech({
+                firstName,
+                lastName
+            });
+
+            M.toast({html: `${firstName} ${lastName} was added as a tech!`});
 
             //Clear Fields
             setFirstName('');
             setLastName('');
         }
-    }
+    };
 
     return (
         <div id='add-tech-modal' className='modal' style={modalStyle}>
@@ -64,11 +71,11 @@ const AddTechModal = (props) => {
             </div>
         </div>
     )
-}
+};
 
 const modalStyle = {
     width: '75%',
     height: '75%'
-}
+};
 
-export default AddTechModal;
+export default connect(null, {addTech}) (AddTechModal);
